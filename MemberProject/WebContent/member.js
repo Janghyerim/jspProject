@@ -30,6 +30,6 @@ function memberChk(){
       return false;
     }
    
-   
+   /*조인폼으로 페이지이동을 해주세요.*/
    document.joinform.submit();
 }

@@ -29,13 +29,13 @@
         pstmt.setString(5,gender);
         pstmt.setString(6,email);
         
-        int result =pstmt.executeUpdate();
+        int result =pstmt.executeUpdate();   //정상적으로 처리가되면 성공시 리턴 1 , 실패시 0
         
-        if(result != 0){
+        if(result != 0){  //성공시 1이고 member_list.jsp로 이동
            out.println("<script>");
              out.println("location.href='member_list.jsp'");
              out.println("</script>");
-        }else{
+        }else{            //실패시 0이고 joinForm.jsp 다시한번 이동
            out.println("<script>");
              out.println("location.href='joinForm.jsp'");
              out.println("</script>");   
